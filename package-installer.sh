@@ -1,5 +1,5 @@
 #! /bin/bash
-cat /etc/os-release | grep ^NAME= | sed -E 's/.*NAME="([a-zA-Z]+)".*/\1/'
+cat /etc/os-release | grep ^NAME= | sed -E 's/.*"([^"]+)".*/\1/'
 
 #sudo dnf install mesa-* \
 #  xcb-* \
